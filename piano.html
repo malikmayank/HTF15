@@ -1,0 +1,39 @@
+
+
+<html>
+  <head>
+  	<title>Rainbow Piano</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="styles/piano.css">
+    <script type="text/javascript" src="scripts/piano.js"></script>
+  </head>
+
+  <body>
+    <h1>Piano</h1>
+    <audio id="noteA" src="sounds/piano-a.wav" preload="auto"></audio>
+    <audio id="noteB" src="sounds/piano-b.wav" preload="auto"></audio>
+    <audio id="noteC" src="sounds/piano-c.wav" preload="auto"></audio>
+    <audio id="noteD" src="sounds/piano-d.wav" preload="auto"></audio>
+    <audio id="noteE" src="sounds/piano-e.wav" preload="auto"></audio>
+    <audio id="noteF" src="sounds/piano-f.wav" preload="auto"></audio>
+    <audio id="noteG" src="sounds/piano-g.wav" preload="auto"></audio>
+
+    <div id="rainbow-piano">
+
+      <div id="violet" onmouseover="playPiano('noteA', 'violet')" onmouseout="restoreColor('violet')">
+      </div>
+      <div id="indigo" onmouseover="playPiano('noteB', 'indigo')" onmouseout="restoreColor('indigo')">
+      </div>
+      <div id="blue" onmouseover="playPiano('noteC', 'blue')" onmouseout="restoreColor('blue')">
+      </div>
+      <div id="green" onmouseover="playPiano('noteD', 'green')" onmouseout="restoreColor('green')">
+      </div>
+      <div id="yellow" onmouseover="playPiano('noteE', 'yellow')" onmouseout="restoreColor('yellow')">
+      </div>
+      <div id="orange" onmouseover="playPiano('noteF', 'orange')" onmouseout="restoreColor('orange')">
+      </div>
+      <div id="black" onmouseover="playPiano('noteG', 'black')" onmouseout="restoreColor('black')">
+      </div>
+    </div>
+  </body>
+</html>
